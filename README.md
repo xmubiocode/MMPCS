@@ -31,36 +31,18 @@ pip install tabulate==0.9.0
 Link：[https://pan.baidu.com/s/1hUuk3HtASd_LvfiefzsdHA](https://pan.baidu.com/s/1hUuk3HtASd_LvfiefzsdHA)  
 Access Code：`yqfv`  
   
-
----
-
 ## Pre-Training
 
 ```bash
 python main.py
 ```
-
----
-
 ## Fine-tuning
 
 After the pre-training is completed, a folder will be generated in the current directory. Remember the name of this folder and use it as the folder to read the pre-trained model when fine-tuning.
 
-示例（以 Estrogen 分类任务为例）：
-
 ```bash
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 \
-python -m torch.distributed.launch --nproc_per_node 8 main_finetune.py
+#Fine-tuning the classification task, taking Estrogen as an example
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python -m torch.distributed.launch --nproc_per_node 8 main_finetune.py
 ```
 
----
-
-> 💡 **提示：** 若仅使用单卡微调，可将上述命令简化为：
-> ```bash
-> python main_finetune.py
-> ```
-
----
-
-这样即可完成从预训练到微调的完整流程。
 
