@@ -28,8 +28,8 @@ pip install tabulate==0.9.0
 
 ## 📂 Data
 
-Link：[https://pan.baidu.com/s/1hUuk3HtASd_LvfiefzsdHA](https://pan.baidu.com/s/1hUuk3HtASd_LvfiefzsdHA)  
-Access Code：`yqfv`  
+Link：[https://pan.baidu.com/s/1hUuk3HtASd_LvfiefzsdHA](https://pan.baidu.com/s/1hUuk3HtASd_LvfiefzsdHA)  Access Code：`yqfv`  
+Contains pre-training data sets, bias data sets, and roberta's pre-model
   
 ## Pre-Training
 
