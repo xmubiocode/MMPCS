@@ -1,4 +1,4 @@
-# 🧬 MMPCS: Multi-view Molecular Pretraining Based on Consistency Information and Specific Information
+# MMPCS: Multi-view Molecular Pretraining Based on Consistency Information and Specific Information
 ---
 
 # Environment
@@ -24,20 +24,17 @@ pip install transformers==4.33.2
 pip install numpy==1.26.1
 pip install tabulate==0.9.0
 ```
-# 运行代码
+# Run
 
-## 📂 数据文件
+## 📂 Data
 
-链接：[https://pan.baidu.com/s/1hUuk3HtASd_LvfiefzsdHA](https://pan.baidu.com/s/1hUuk3HtASd_LvfiefzsdHA)  
-提取码：`yqfv`  
-> 来自百度网盘超级会员V1的分享，包含：
-> - 预训练数据集  
-> - 微调数据集  
-> - RoBERTa 的预训练模型  
+Link：[https://pan.baidu.com/s/1hUuk3HtASd_LvfiefzsdHA](https://pan.baidu.com/s/1hUuk3HtASd_LvfiefzsdHA)  
+Access Code：`yqfv`  
+  
 
 ---
 
-## 🚀 预训练
+## Pre-Training
 
 ```bash
 python main.py
@@ -45,10 +42,9 @@ python main.py
 
 ---
 
-## 🔧 微调
+## Fine-tuning
 
-预训练结束后，会在当前目录下生成一个文件夹，  
-记住该文件夹的名称，微调时作为读取预训练模型的输入路径。
+After the pre-training is completed, a folder will be generated in the current directory. Remember the name of this folder and use it as the folder to read the pre-trained model when fine-tuning.
 
 示例（以 Estrogen 分类任务为例）：
 
